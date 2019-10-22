@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace epam
+namespace serialization
 {
-    public interface IPrinter
+    interface ISerializer<T>
     {
-        void WriteLine(string value);
-        string ReadLine();
+        void Serialize();
+        object Deserialize();
     }
 }

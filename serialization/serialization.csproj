@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{07CAB790-BD1E-4B80-9D5D-F4C7B5AB6030}</ProjectGuid>
+    <ProjectGuid>{28599400-EBC7-4E70-882A-6277067CC5C2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>enums</RootNamespace>
-    <AssemblyName>enums</AssemblyName>
+    <RootNamespace>serialization</RootNamespace>
+    <AssemblyName>serialization</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,19 +46,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySerializer.cs" />
+    <Compile Include="Car.cs" />
+    <Compile Include="ISerializer.cs" />
+    <Compile Include="JsonSerializer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Task1\Months.cs" />
-    <Compile Include="Task2\Colors.cs" />
-    <Compile Include="Task2\ColorsExtensions.cs" />
-    <Compile Include="Task3\LongRange.cs" />
+    <Compile Include="XMLSerializer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\printer\printer.csproj">
-      <Project>{e97aac75-2f11-4b1a-ae73-8c947d5862ac}</Project>
+      <Project>{E97AAC75-2F11-4B1A-AE73-8C947D5862AC}</Project>
       <Name>printer</Name>
     </ProjectReference>
   </ItemGroup>
