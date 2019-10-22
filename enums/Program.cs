@@ -1,7 +1,7 @@
 ﻿using enums.Task1;
 using enums.Task2;
 using enums.Task3;
-using epam;
+using printer;
 using System;
 using System.Collections.Generic;
 using System.Linq;

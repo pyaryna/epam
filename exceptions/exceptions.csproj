@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\epam\structure.csproj">
-      <Project>{ac971303-f4d6-4181-a487-065809082c11}</Project>
-      <Name>structure</Name>
+    <ProjectReference Include="..\printer\printer.csproj">
+      <Project>{e97aac75-2f11-4b1a-ae73-8c947d5862ac}</Project>
+      <Name>printer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

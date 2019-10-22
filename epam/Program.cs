@@ -1,5 +1,6 @@
 ﻿using epam.Task1;
 using epam.Task2;
+using printer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
