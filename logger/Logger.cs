@@ -25,9 +25,9 @@ namespace logger
 
         public void WriteMessage(string message)
         {
-            _printer.WriteLine(message);
-           
+            _printer.WriteLine(message);           
         }
+
         public string ReadMessage()
         {
             if (_printer is ConsolePrinter)
