@@ -21,6 +21,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "serialization", "serializat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "reflection", "reflection\reflection.csproj", "{94624539-8B79-44F4-A065-F0D35FB13F6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "stylecop", "stylecop\stylecop.csproj", "{82F060E9-496D-4EB6-932C-D75AD0593874}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excel", "excel\excel.csproj", "{0F746E56-1DD4-4166-945D-3613B16C19D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +67,14 @@ Global
 		{94624539-8B79-44F4-A065-F0D35FB13F6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94624539-8B79-44F4-A065-F0D35FB13F6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94624539-8B79-44F4-A065-F0D35FB13F6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82F060E9-496D-4EB6-932C-D75AD0593874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82F060E9-496D-4EB6-932C-D75AD0593874}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82F060E9-496D-4EB6-932C-D75AD0593874}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82F060E9-496D-4EB6-932C-D75AD0593874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F746E56-1DD4-4166-945D-3613B16C19D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F746E56-1DD4-4166-945D-3613B16C19D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F746E56-1DD4-4166-945D-3613B16C19D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F746E56-1DD4-4166-945D-3613B16C19D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
