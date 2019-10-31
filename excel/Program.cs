@@ -46,7 +46,7 @@ namespace excel
                     try
                     {                        
                         stopwatch.Restart();
-                        excelFile.WriteIntoFile("E:\\me\\epam\\epam\\excel\\bin\\Debug\\result.xlsx", 1, dataFromFile, Int32.Parse(settings["columnToWrite"]));
+                        excelFile.WriteIntoFile("result.xlsx", 1, dataFromFile, Int32.Parse(settings["columnToWrite"]));
                         stopwatch.Stop();
                         printer.WriteLine($"WriteIntoFile, Elapsed={stopwatch.ElapsedMilliseconds}");
                     }

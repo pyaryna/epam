@@ -11,7 +11,7 @@ namespace io
 {
     class WorkWithIO: IWorkWithIO
     {
-        private static Logger logger = LogManager.GetCurrentClassLogger();
+        private static Logger _logger = LogManager.GetCurrentClassLogger();
 
         public void GetFilesTree(DirectoryInfo dir, IPrinter printer, int indentLevel)
         {
@@ -34,7 +34,7 @@ namespace io
             }
             catch (IOException e)
             {
-                logger.Fatal("GetFilesTree method", e.Message);
+                _logger.Fatal("GetFilesTree method", e.Message);
             }
 
 
@@ -60,7 +60,7 @@ namespace io
             }
             catch (IOException e)
             {
-                logger.Fatal("FindFileInDirectory method", e.Message);
+                _logger.Fatal("FindFileInDirectory method", e.Message);
             }            
         }
     }
