@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excel", "excel\excel.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator", "calculator\calculator.csproj", "{03371786-B971-401E-A036-0D200EBD77D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "threads", "threads\threads.csproj", "{C9057574-C33B-4912-8BE6-C5D415FA590A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{03371786-B971-401E-A036-0D200EBD77D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03371786-B971-401E-A036-0D200EBD77D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03371786-B971-401E-A036-0D200EBD77D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
