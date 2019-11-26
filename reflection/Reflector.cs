@@ -101,5 +101,58 @@ namespace reflection
             _printer.WriteLine(new string('-', 20));
         }
 
+        public object CreateInstance(string className, object[] parameters = null)
+        {            
+            _printer.WriteLine($"\nCreating instance of class {className}:\n");
+
+            object instance = null;
+
+            try
+            {
+                Type type = Assembly.GetType(Assembly.GetName().Name + "." + className);                
+
+                ConstructorInfo ctor = type.GetConstructor(new[] { typeof(string) });
+                instance = ctor.Invoke(parameters);
+
+                _printer.WriteLine("Instance successfully created!");
+            }
+            catch (NullReferenceException e)
+            {
+                _logger.WriteMessage("!!!LOG: " + e.Message);
+            }
+
+            _printer.WriteLine(new string('-', 20));
+
+            return instance;
+        }
+
+        public object InvokeMethod(string className, string methodName, object[] instanceParameters = null, object[] methodParameters = null)
+        {
+            _printer.WriteLine($"\nInvoking method {methodName} of class {className}:\n");
+
+            try
+            {
+                Type type = Assembly.GetType(Assembly.GetName().Name + "." + className);
+
+                MethodInfo method = type.GetMethod(methodName);
+
+                var instance = CreateInstance(className, instanceParameters);
+
+                method.Invoke(instance, methodParameters);
+            }
+            catch (TargetParameterCountException e)
+            {
+                _logger.WriteMessage("!!!LOG: " + e.Message);
+            }
+            catch (NullReferenceException e)
+            {
+                _logger.WriteMessage("!!!LOG: " + e.Message);
+            }
+
+            _printer.WriteLine(new string('-', 20));
+
+            return null;
+        }
+
     }
 }

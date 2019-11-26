@@ -22,7 +22,12 @@ namespace reflection
 
             reflector.ListAllTypes();
             reflector.ListAllMembers("FilePrinter");
-            reflector.GetParams("FilePrinter", "WriteLine");         
+            reflector.GetParams("FilePrinter", "WriteLine");
+            object[] instanceParameters = new object[] { "testFile.txt" };
+            reflector.CreateInstance("FilePrinter", instanceParameters);
+            object[] methodParameters = new object[] { "some text for invoked method" };
+            reflector.InvokeMethod("FilePrinter", "WriteLine", instanceParameters, methodParameters);
+            reflector.InvokeMethod("FilePrinter", "WriteLine", instanceParameters);
 
             printer.ReadLine();
         }
