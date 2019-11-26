@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calculator", "calculator\ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "threads", "threads\threads.csproj", "{C9057574-C33B-4912-8BE6-C5D415FA590A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "patterns", "patterns\patterns.csproj", "{37CD4FF2-9BB2-4231-A633-B1B00F4AF63B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9057574-C33B-4912-8BE6-C5D415FA590A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37CD4FF2-9BB2-4231-A633-B1B00F4AF63B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37CD4FF2-9BB2-4231-A633-B1B00F4AF63B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37CD4FF2-9BB2-4231-A633-B1B00F4AF63B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37CD4FF2-9BB2-4231-A633-B1B00F4AF63B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
